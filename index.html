@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Portfolio by @Sanjeev Anehosur</title>
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio &amp; @Sanjeev Anehosur">
@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="img/favicon.png" />
 	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+	<title>Portfolio by @Sanjeev Anehosur</title>
 	<style>
 		.intro h1:before {
 			/* Edit this with your name or anything else */
@@ -46,13 +48,12 @@
 	<!-- Introduction -->
 	<div class="intro section" id="about">
 		<div class="container">
-			<p>Hi, I’m Sanjeev Anehosur</p>
 			<div class="units-row units-split wrap">
 				<div class="unit-20">
-					<img src="./image/me2.jpg" alt="Avatar">
+					<img src="C:\Users\Sanjeev Anehosur\Pictures\Camera Roll\me2.jpg" alt="Avatar">
 				</div>
 				<div class="unit-80">
-					<h1>Hi!<br><span id="typed"></span></h1>
+					<h1>Hi! <br>I Am <br><span id="typed"></span></h1>
 				</div>
 				<p>
 					Hello, I'm Sanjeev Anehosur, a passionate student at RV University. With a fervent curiosity for technology and a love for creative problem-solving. I thrive on turning ideas into reality, leveraging by ability to understand the problem and to craft innovative solutions. From designing captivating user interfaces to diving into intricate coding challenges, I'm dedicated to delivering impactful and user-centric experiences. My journey as a student has equipped me with knowledge and a commitment to continual learning. I'm excited about the possibilities of technology and am driven to make a meaningful difference through my work.
@@ -64,22 +65,31 @@
 	<!-- Work Experience -->
 	<div class="Education" id="education">
 		<div class="container">
+			<div class="units-row units-split wrap">
 			<h1>Education<br></h1>
-			<ul class="work-list">
-				<li>10th</li>
-				<li><a href="https://ashokacademy.org/">Ashok Academy</a></li>
-				<li>Pass out year:2021</li>
-			</ul>
-			<ul class="work-list">
-				<li>12th</li>
-				<li><a href="https://bkhm.edu.in/rajhans/">Rajhans Vidyalya</a></li>
-				<li>Pass out year: 2023</li>
-			</ul>
-			<ul class="work-list">
-				<li>Undergraduate</li>
-				<li><a href="https://rvu.edu.in/">RV University</a></li>
-				<li>Ongoing</li>
-			</ul>
+			<table border="6">
+				<tr>
+					<th>Education</th>
+					<th>Institution</th>
+					<th>Passed Out Year</th>
+				</tr>
+				<tr>
+					<td>10th</td>
+					<td><a href="https://ashokacademy.org/">Ashok Academy</a></yd>
+					<td>2021</td>
+				</tr>
+				<tr>
+					<td>12th</td>
+					<td><a href="https://bkhm.edu.in/rajhans/">Rajhans Vidyalya</a></td>
+					<td>2023</td>
+				</tr>
+				<tr>
+					<td>Undergraduate</td>
+					<td><a href="https://rvu.edu.in/">RV University</a></td>
+					<td>Ongoing</td>
+				</tr>
+			</table>
+		    </div>
 		</div>
 	</div>
 
@@ -129,19 +139,37 @@
             <div class="container">
                 <h1>Contact Me</h1>
                 <div class="contact-info">
-                    <p>Email: sanjeev1510anehosur@gmail.com</p>
-                    <p>Phone: 91 8779100457</p>
-                    <p>Location: Bangalore, India</p>
+                    <p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">sanjeev1510anehosur@gmail.com</a></p>
+                    <p>Phone: +91 8779100457</p>
+                    <p>Location: RV University, Vidyanikethan Post, Mysuru Road, Bangalore, India</p>
                 </div>
-                <form id="contactForm">
-                    <input type="text" placeholder="Your Name">
-                    <input type="email" placeholder="Your Email">
-                    <textarea placeholder="Your Message"></textarea>
-                    <a href="#" class="btn btn-primary"><button onclick="alert('Your response has been submitted')">Submit</button> </a>
-                </form>
+				<center><div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+					<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+					  <div class="row">
+						<div class="form-group col-md-6">
+						  <label for="name">Your Name</label>
+						  <input type="text" name="name" class="form-control" id="name" required>
+						</div><br>
+						<div class="form-group col-md-6">
+						  <label for="name">Your Email</label>
+						  <input type="email" class="form-control" name="email" id="email" required>
+						</div><br>
+					  </div>
+					  <div class="form-group">
+						<label for="name">Subject</label>
+						<input type="text" class="form-control" name="subject" id="subject" required>
+					  </div><br>
+					  <div class="form-group">
+						<label for="name">Message</label>
+						<textarea class="form-control" name="message" rows="5" required></textarea>
+					  </div><br>
+					  <div class="my-3">
+                      <div class="text-center"><button type="submit">Send Message</button>
+					  </div><br>
+					</form>
+				  </div></center>
             </div>
-        </div>
-	</div>
+	    </div>
 
 	<!-- Quote -->
 	<div class="quote">
@@ -153,17 +181,17 @@
 	<footer>
 		<div class="container">
 			<div class="units-row">
-			    <div class="unit-50">
+			    <div class="unit-8">
 			    	<span>Created By <a href="#">Sanjeev Anehosur</a> | <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
 
 			    </div>
 			    <div class="unit-50">
-					<div class="home-sci">
+					<center><div class="home-sci">
                         <a href="https://www.instagram.com/accounts/login//"><i class='bx bxl-instagram'></i></a>
                         <a href="https://twitter.com/?lang=en"><i class='bx bxl-twitter'></i></a>
                         <a href="https://www.linkedin.com/in/sanjeev-anehosur-7501192a7/"><i class='bx bxl-linkedin'></i></a>
                         <a href="https://github.com/SanJeeVanEhoSur"><i class='bx bxl-github' ></i></a>
-                    </div>
+                    </div></center>
 			    </div>
 			</div>
 		</div>
@@ -177,10 +205,17 @@
     <script>
 		function newTyped(){}$(function(){$("#typed").typed({
 		// Change to edit type effect
-		strings: ["I Am a son", "A brother", "And A Student"],
+		strings: ["A son", "A brother", "And A Student"],
 
-		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+		typeSpeed:50,backDelay:1000,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
     </script>
+
+<script>
+    document.getElementById("Contact Me").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Form submitted!");
+    });
+</script>
 
 
 </body>
